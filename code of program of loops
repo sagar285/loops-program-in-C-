@@ -1,0 +1,200 @@
+// 1st program
+// Online C compiler to run C program online
+#include <stdio.h>
+// n=5 1 2 3 4 5
+// intialization condition operator 
+int main() {
+  int i=1,n; //intialization
+  printf("enter your nmber \n");
+  scanf("%d",&n);
+  while(i<=n){  //condition
+      printf("%d\t",i);
+      i++; // operator
+  }
+ 
+
+    return 0;
+}
+
+// 2nd program 
+// Online C compiler to run C program online
+#include <stdio.h>
+// n=5 5 4 3 2 1
+// intialization condition operator 
+int main() {
+  int i,n; //intialization
+  printf("enter your nmber \n");
+  scanf("%d",&n);
+    i=n; // intiialize
+    do{
+        printf("%d\t",i); 
+        i--; //oprator
+    }while(i>=1); // condtion
+ 
+
+    return 0;
+}
+//3rd program 
+// Online C compiler to run C program online
+#include <stdio.h>
+// n=5 2 4
+int main() {
+  int i=2,n; //intialization
+  printf("enter your nmber \n");
+  scanf("%d",&n);
+  while(i<=n){
+      printf("%d\t",i);
+     i= i+2;
+  }
+    return 0;
+}
+
+// 4th program 
+// Online C compiler to run C program online
+#include <stdio.h>
+// n=5 2 4
+int main() {
+  int i=1,n; //intialization
+  printf("enter your nmber \n");
+  scanf("%d",&n);
+  while(i<=n){
+      printf("%d\t",i);
+     i= i+2;
+  }
+    return 0;
+}
+
+// 5th program 
+// Online C compiler to run C program online
+#include <stdio.h>
+// n=523 325
+// 523/10 52/10 5/10
+// rem =3 rem 2 rem 5
+int main() {
+  int i,n,rem; //intialization
+  printf("enter your nmber \n");
+  scanf("%d",&n);
+  while(n>0){
+      rem=n%10;
+      printf("%d\t",rem);
+      n=n/10;
+  }
+
+    return 0;
+}
+
+// 6th program
+// Online C compiler to run C program online
+#include <stdio.h>
+// n=523 5+2+3 10
+// 523/10 52/10 5/10
+// rem =3 rem 2 rem 5
+int main() {
+  int i,n,rem,sum=0; //intialization
+  printf("enter your nmber \n");
+  scanf("%d",&n);
+  while(n>0){
+      rem=n%10;
+      sum=sum+rem;
+      n=n/10;
+  }
+  printf(" sum of your given number is %d",sum);
+
+    return 0;
+}
+//7th program
+// Online C compiler to run C program online
+#include <stdio.h>
+// n=153 1*1*1 +5*5*5+ 3*3*3 153  //armstrongnumber 1+125+27
+// 523/10 52/10 5/10
+// rem =3 rem 2 rem 5
+int main() {
+  int i,n,rem,sum=0,temp; //intialization
+  printf("enter your nmber \n");
+  scanf("%d",&n);
+  temp=n;
+  while(n>0){
+      rem=n%10;
+      sum=sum+rem*rem*rem;
+      n=n/10;
+  }
+  if(temp==sum){
+      printf("given number is armstrong number");
+  }
+  else{
+        printf("given number is not an  armstrong number");
+  }
+
+
+    return 0;
+}
+//8th program
+// Online C compiler to run C program online
+#include <stdio.h>
+// 5 5 10 15 20 25.....50
+int main() {
+  int i,n; //intialization
+  printf("enter your nmber \n");
+  scanf("%d",&n);
+  printf("table is");
+  for(i=1;i<=10;i++){
+      printf("%d*%d=%d\n",n,i,n*i);
+  }
+ 
+
+
+    return 0;
+}
+
+// 9th program
+// Online C compiler to run C program online
+#include <stdio.h>
+// 3 10 20 30 10+20+30=60
+int main() {
+  int i,n,newn,sum=0; //intialization
+  printf("how many number you want to enter \n");
+  scanf("%d",&n);
+  printf("enterd numer");
+  for(i=1;i<=n;i++){
+      scanf("%d",&newn);
+      sum=sum+newn;
+  }
+  printf("sum of your given numbers are %d",sum);
+
+ 
+
+
+    return 0;
+}
+// 10th program
+// Online C compiler to run C program online
+#include <stdio.h>
+// 5! 5*4*3*2*1
+int main() {
+  int i,n,fact=1; //intialization
+  printf("neter number to get factorial \n");
+  scanf("%d",&n);
+  for(i=1;i<=n;i++){
+    fact=fact*i; // fact=1*1 =1 fact=1*2 2 fact =2*3 6
+  }
+  printf("factorial is %d",fact);
+
+    return 0;
+}
+//11th program
+// Online C compiler to run C program online
+#include <stdio.h>
+// 13 12/6 40/20  6 /2 0
+int main() {
+  int i,n; //intialization
+  printf("neter number to check prime or not \n");
+  scanf("%d",&n);
+  for(i=2;i<=n/2;i++){
+      if(n%i==0){
+          printf(" given number is not prime number");
+          exit(0);
+      }
+  }
+  printf("given number is prime number");
+    return 0;
+}
